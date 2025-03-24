@@ -1,0 +1,267 @@
+/* Start Variables */
+:root {
+    --main-color: rgb(117, 98, 224);
+    --alt-color: rgb(189, 189, 189);
+    --section-padding: 50px;
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(26, 26, 41);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Global Rules */
+/* Start Header */
+header {
+    background-color: rgb(24, 24, 36);
+    padding: 20px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+header .container .logo h2 {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+@media (max-width: 992px) {
+    header .container .logo {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    header .container nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+}
+
+header .container nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+header .container nav ul li {
+    margin: 0px 20px;
+}
+
+@media (max-width: 750px) {
+    header .container nav ul li {
+        margin: 0px 10px;
+    }
+}
+
+header .container nav ul li a {
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media (max-width: 750px) {
+    header .container nav ul li a {
+        font-size: 16px;
+    }
+}
+
+header .container nav ul li a.active,
+header nav ul li a:hover {
+    color: var(--main-color);
+}
+
+
+/* End Header */
+/* Start Home */
+.home {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.home .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+@media (max-width: 992px) {
+
+    .home .container {
+        flex-direction: column-reverse;
+    }
+}
+
+.home .container .img-container {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1 / 1;
+    padding: 15px;
+    background: var(--main-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .container .img {
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/me.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media (max-width: 992px) {
+    .home .container .content {
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+.home .container .content h2 {
+    color: #FFFFFF;
+    font-size: 32px;
+
+}
+
+.home .container .content h1 {
+
+    color: #FFFFFF;
+    font-size: 52px;
+
+}
+
+@media (max-width: 992px) {
+    .home .container .content h1 {
+        font-size: 42px;
+    }
+}
+
+.home .container .content p {
+    color: #FFFFFF;
+    font-size: 19px;
+    line-height: 25px;
+    max-width: 550px;
+    margin-bottom: 40px;
+
+}
+
+@media (max-width: 992px) {
+    .home .container .content p {
+        font-size: 22px;
+    }
+}
+
+
+.home .container .content .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (max-width: 992px) {
+    .home .container .content .buttons {
+        justify-content: center;
+    }
+}
+
+.home .container .content .buttons .btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #7A5FFF;
+    color: white;
+    padding: 16px 45px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.home .container .content .buttons .btn:hover{
+    background: #E8EAF6;
+    color: #7A5FFF;
+}
+
+.home .container .content .buttons .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #E8EAF6;
+    color: #7A5FFF;
+    font-size: 24px;
+    border-radius: 8px;
+    transition: .3s;
+}
+.home .container .content .buttons .icon:hover {
+    background: #7A5FFF;
+    color: #E8EAF6;
+}
+
+/* End Home */
+/* Start About */
+
+/* End About */
